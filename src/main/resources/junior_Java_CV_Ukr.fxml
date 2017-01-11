@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="mainPain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      onMouseClicked="#chouseLanguage" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.My_CV.Service.ControllerUkr">
+    <children>
+        <ImageView fx:id="myPhotos" fitHeight="159.0" fitWidth="111.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true"
+                   preserveRatio="true"/>
+        <Text layoutX="148.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Резюме на посаду: Junior Java developer" wrappingWidth="428.13671875">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Text>
+        <Text layoutX="148.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ПІБ: Сальвадор Сахо Шейхович"
+              wrappingWidth="272.13671875">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Text>
+        <Button fx:id="btnPersonalInformation" layoutX="147.0" layoutY="95.0" mnemonicParsing="false"
+                onMouseClicked="#showPersonalInfo" prefHeight="25.0" prefWidth="167.0" text="Персональна інформація"/>
+        <Button fx:id="btnWorkExperience" layoutX="147.0" layoutY="134.0" mnemonicParsing="false"
+                onMouseClicked="#showWorkExperience" prefHeight="25.0" prefWidth="167.0" text="Досвід роботи"/>
+        <Text layoutX="354.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Створив Сальвадор Сахо"
+              textAlignment="CENTER" wrappingWidth="156.13671875">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Text>
+        <MenuButton fx:id="btnEducationAndTraining" layoutX="147.0" layoutY="170.0" mnemonicParsing="false"
+                    onMouseClicked="#showEducationAndTrainings" prefHeight="25.0" prefWidth="167.0"
+                    text="Освіта\тренінги">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Action 1"/>
+                <MenuItem mnemonicParsing="false" text="Action 2"/>
+            </items>
+        </MenuButton>
+        <MenuButton fx:id="btnSkills" layoutX="147.0" layoutY="206.0" mnemonicParsing="false"
+                    onMouseClicked="#showSkills" prefHeight="25.0" prefWidth="167.0" text="Персональні навички">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Action 1"/>
+                <MenuItem mnemonicParsing="false" text="Action 2"/>
+            </items>
+        </MenuButton>
+        <MenuButton fx:id="btnLanguage" layoutX="618.0" layoutY="14.0" mnemonicParsing="false"
+                    onMouseClicked="#chouseLanguage" prefHeight="25.0" prefWidth="111.0" text="Мова">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Action 1"/>
+                <MenuItem mnemonicParsing="false" text="Action 2"/>
+            </items>
+        </MenuButton>
+        <ImageView fx:id="copyRightimg" fitHeight="20.0" fitWidth="20.0" layoutX="510.0" layoutY="555.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+        <Text layoutX="532.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2016"
+              wrappingWidth="32.13671875">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Text>
+        <RadioButton fx:id="firstPhoto" layoutX="14.0" layoutY="174.0" mnemonicParsing="false"
+                     onMouseClicked="#setFirstPic" prefHeight="17.0" prefWidth="0.0"/>
+        <RadioButton fx:id="seccondPhoto" layoutX="49.0" layoutY="174.0" mnemonicParsing="false"
+                     onMouseClicked="#setSeccondPic" prefHeight="17.0" prefWidth="0.0"/>
+        <RadioButton fx:id="thirdPhoto" layoutX="83.0" layoutY="174.0" mnemonicParsing="false"
+                     onMouseClicked="#setThirdPic" prefHeight="17.0" prefWidth="0.0"/>
+    </children>
+</Pane>
